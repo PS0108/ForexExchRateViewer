@@ -1,0 +1,14 @@
+.Head{
+    width: 100%;
+    height: 200px;
+    text-align: left;
+
+    
+    font-style: italic;
+    color: #036;
+}
+
+.Head-img{
+    width: 100%;
+    height: 130px;
+}

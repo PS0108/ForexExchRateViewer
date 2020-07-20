@@ -1,0 +1,92 @@
+.tableDiv{
+    
+  width: 40%;
+    display: inline-table;
+    
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+table, th, td {
+    border: 1px solid black;
+  }
+  
+  thead{
+      
+      font-weight: bold;
+  }
+
+tr:hover {background-color: #b9c9d3}
+tr:nth-child(even) {background-color: #b9c9d3;}
+
+select {  
+    padding: 1px 20px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #48446e;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .selectDivLeft{
+      float: left;
+      padding-left: 550px;
+  }
+
+  .selectDivRight{   
+    padding-right: 500px;
+}
+
+.row{
+    padding-top: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Left and right column */
+.right {
+    padding-right: 400px;
+
+}
+.left {
+    float: left;
+    padding-left: 500px;
+}
+ .MainDiv{
+     padding-top: 30px;
+     color: rgb(59, 59, 95);
+ }
+
+.Button{
+    padding-top: 20px;
+}
+
+header{ 
+    padding-bottom: 10px;
+}
+
+.ContentDiv{
+    padding-bottom: 500px;
+
+}
+
+
+
+
+
+
+
+
+
