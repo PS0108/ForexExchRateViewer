@@ -59,7 +59,6 @@ Web Interface:
 ![Historical](https://user-images.githubusercontent.com/63558030/87901858-249c1c00-ca26-11ea-8edd-05ab2c818be5.JPG)
 ![LiveRate](https://user-images.githubusercontent.com/63558030/87901859-249c1c00-ca26-11ea-92dd-ab9c51661c3e.JPG)
 ![Rate Change](https://user-images.githubusercontent.com/63558030/87901860-249c1c00-ca26-11ea-8947-67234ce4f886.JPG)
-![WebInterface](https://user-images.githubusercontent.com/63558030/87901861-2534b280-ca26-11ea-81d1-4af215bb854b.JPG)
 
 
 
