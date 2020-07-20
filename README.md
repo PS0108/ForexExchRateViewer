@@ -56,8 +56,8 @@ CREATE TABLE forexapi.currencies (
 
 
 Web Interface:
+![LiveRate](https://user-images.githubusercontent.com/63558030/87902735-6332d600-ca28-11ea-9ae2-a513b8ea6497.JPG)
 ![Historical](https://user-images.githubusercontent.com/63558030/87901858-249c1c00-ca26-11ea-8edd-05ab2c818be5.JPG)
-![LiveRate](https://user-images.githubusercontent.com/63558030/87901859-249c1c00-ca26-11ea-92dd-ab9c51661c3e.JPG)
 ![Rate Change](https://user-images.githubusercontent.com/63558030/87901860-249c1c00-ca26-11ea-8947-67234ce4f886.JPG)
 
 
