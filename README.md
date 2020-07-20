@@ -20,29 +20,29 @@ Usage Instructions:
 Cassandra Deployment Instructions:
 - Pull Cassandra Image from Docker Hub
 Pull Cassandra Official Docker Image (https://hub.docker.com/_/cassandra)
-$ docker pull cassandra 
+     $ docker pull cassandra 
 
 - Create a network for our Cassandra container. Let’s call it “cassandra-net”
-$ docker network create cassandra-net
+    $ docker network create cassandra-net
 
 - Create and run the container on port 9042 using the following command
-$ docker run --name cassandra_cont  -p 9042:9042 --network cassandra-net -d cassandra:latest
+    $ docker run --name cassandra_cont  -p 9042:9042 --network cassandra-net -d cassandra:latest
 
 - Connect to Cassandra from cqlsh
-$ docker run -it --network cassandra-net --rm cassandra cqlsh cassandra_cont 
+    $ docker run -it --network cassandra-net --rm cassandra cqlsh cassandra_cont 
 
-- - Container shell access 
-$ docker exec -it cassandra_cont  bash
+ - Container shell access 
+    $ docker exec -it cassandra_cont  bash
 
 
 Database Schema:
-CREATE KEYSPACE forexapi WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '3'}  AND durable_writes = true;
+1. CREATE KEYSPACE forexapi WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '3'}  AND durable_writes = true;
 
-CREATE TABLE forexapi.lastloadinfo (
+2. CREATE TABLE forexapi.lastloadinfo (
     lastloaddate date PRIMARY KEY
 )
 
-CREATE TABLE forexapi.histdata (
+3. CREATE TABLE forexapi.histdata (
     base_curr text,
     rate_date date,
     target_curr text,
@@ -54,7 +54,7 @@ CREATE TABLE forexapi.currencies (
     currency_name text PRIMARY KEY
 )
 
-Application Interface and Results:
+
 
 
 
