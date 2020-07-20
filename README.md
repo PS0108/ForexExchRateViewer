@@ -1,9 +1,9 @@
-Forex Currency Exchange Rate Viewer
+**Forex Currency Exchange Rate Viewer**
 
 The application provides Historical and Real-Time exchange rates for currency pairs as well as percentage change in the rate over a duration.
 The currency rate data has been sourced from an external API.
 
-Technology stack:
+**Technology stack**
 1. Flask Framework for Backend (Python 3.6)
 2. Cassandra Database
 3. React, Javascript for Frontend 
@@ -11,11 +11,11 @@ Technology stack:
 5. JSON
 6. Docker (Cassandra is dockerized)
 
-Processing:
+**Processing**
 The application fetches the delta historical data from an external API during startup and stores in Cassandra Cluster database. 
 The Historical requests for data and rate change are served by RESTful endpoints in Flask and the response is evalualted from stored database records.
 
-Usage Instructions:
+**Usage Instructions**
 
 Cassandra Deployment Instructions:
 - Pull Cassandra Image from Docker Hub
@@ -35,7 +35,7 @@ Pull Cassandra Official Docker Image (https://hub.docker.com/_/cassandra)
     $ docker exec -it cassandra_cont  bash
 
 
-Database Schema:
+**Database Schema**
 1. CREATE KEYSPACE forexapi WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '3'}  AND durable_writes = true;
 
 2. CREATE TABLE forexapi.lastloadinfo (
@@ -55,7 +55,7 @@ CREATE TABLE forexapi.currencies (
 )
 
 
-Web Interface:
+**Web Interface**
 ![LiveRate](https://user-images.githubusercontent.com/63558030/87902735-6332d600-ca28-11ea-9ae2-a513b8ea6497.JPG)
 ![Historical](https://user-images.githubusercontent.com/63558030/87901858-249c1c00-ca26-11ea-8edd-05ab2c818be5.JPG)
 ![Rate Change](https://user-images.githubusercontent.com/63558030/87901860-249c1c00-ca26-11ea-8947-67234ce4f886.JPG)
