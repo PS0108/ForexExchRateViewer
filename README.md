@@ -12,12 +12,14 @@ The currency rate data has been sourced from an external API.
 6. Docker (Cassandra is dockerized)
 
 **Processing**
+
 The application fetches the delta historical data from an external API during startup and stores in Cassandra Cluster database. 
 The Historical requests for data and rate change are served by RESTful endpoints in Flask and the response is evalualted from stored database records.
 
 **Usage Instructions**
 
 Cassandra Deployment Instructions:
+
 - Pull Cassandra Image from Docker Hub
 Pull Cassandra Official Docker Image (https://hub.docker.com/_/cassandra)
      $ docker pull cassandra 
@@ -36,6 +38,7 @@ Pull Cassandra Official Docker Image (https://hub.docker.com/_/cassandra)
 
 
 **Database Schema**
+
 1. CREATE KEYSPACE forexapi WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '3'}  AND durable_writes = true;
 
 2. CREATE TABLE forexapi.lastloadinfo (
@@ -56,6 +59,7 @@ CREATE TABLE forexapi.currencies (
 
 
 **Web Interface**
+
 ![LiveRate](https://user-images.githubusercontent.com/63558030/87902735-6332d600-ca28-11ea-9ae2-a513b8ea6497.JPG)
 ![Historical](https://user-images.githubusercontent.com/63558030/87901858-249c1c00-ca26-11ea-8edd-05ab2c818be5.JPG)
 ![Rate Change](https://user-images.githubusercontent.com/63558030/87901860-249c1c00-ca26-11ea-8947-67234ce4f886.JPG)
