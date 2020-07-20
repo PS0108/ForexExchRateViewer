@@ -55,7 +55,11 @@ CREATE TABLE forexapi.currencies (
 )
 
 
-
+Web Interface:
+![WebAppInterface](https://user-images.githubusercontent.com/63558030/87901169-4e544380-ca24-11ea-98ad-326098cf5488.JPG)
+![Historical](https://user-images.githubusercontent.com/63558030/87901097-1f3dd200-ca24-11ea-9c0c-cd6ef0a5479e.JPG)
+![RateChange](https://user-images.githubusercontent.com/63558030/87901168-4e544380-ca24-11ea-912e-be671bd35afa.JPG)
+![LiveRates](https://user-images.githubusercontent.com/63558030/87901166-4dbbad00-ca24-11ea-98b0-9296032629a6.JPG)
 
 
 
