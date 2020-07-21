@@ -1,12 +1,12 @@
 **Forex Currency Exchange Rate Viewer**
 
-The application provides Historical and Real-Time exchange rates for currency pairs as well as percentage change in the rate over a duration.
+The RESTful Web Application provides Historical and Real-Time exchange rates for currency pairs as well as percentage change in the rate over a time duration.
 The currency rate data has been sourced from an external API.
 
 **Technology stack**
 1. Flask Framework for Backend (Python 3.6)
 2. Cassandra Database
-3. React, Javascript for Frontend 
+3. React, Javascript, AJAX for Frontend 
 4. RESTful API endpoints
 5. JSON
 6. Docker (Cassandra is dockerized)
