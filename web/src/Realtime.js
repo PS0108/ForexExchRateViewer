@@ -67,7 +67,7 @@ class Realtime extends React.Component{
                 });
             }
 
-          fetch("https://fxmarketapi.com/apilive?api_key=QaXQlRuI8I1ra8TB7qS&currency=" + this.state.currencies)
+          fetch("https://fxmarketapi.com/apilive?api_key=API_KEY&currency=" + this.state.currencies)
             .then(res => res.json())
             .then(
               (result) => {

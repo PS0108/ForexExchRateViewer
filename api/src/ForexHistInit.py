@@ -47,7 +47,7 @@ class ForexHistInit:
             currencies = self.fetchCurrencies()
             print("Fetching data between {} and {}".format(sdate, edate))
             # Make a call to API URL and fetch data
-            url = 'https://fxmarketapi.com/apitimeseries?api_key=QaXQlRuI8I1ra8TB7qSa&currency={}&start_date={}&end_date={}&format=close'.format(currencies, sdate, edate)
+            url = 'https://fxmarketapi.com/apitimeseries?api_key=API_KEY&currency={}&start_date={}&end_date={}&format=close'.format(currencies, sdate, edate)
             print(url)
             self.response = requests.get(url)
             if self.response.status_code is requests.codes.ok:
